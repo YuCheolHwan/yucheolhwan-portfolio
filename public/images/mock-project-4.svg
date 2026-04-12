@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#fff7ed"/>
+  <rect x="0" y="0" width="800" height="4" fill="#fb923c"/>
+  <text x="400" y="200" font-family="monospace" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle">GB D Solution</text>
+  <text x="400" y="225" font-family="monospace" font-size="11" fill="#fdba74" text-anchor="middle" dominant-baseline="middle">Kotlin · REST API · Kakao Map</text>
+  <rect x="340" y="245" width="120" height="1" fill="#fed7aa"/>
+  <text x="400" y="265" font-family="monospace" font-size="10" fill="#fed7aa" text-anchor="middle" dominant-baseline="middle">건설 현장 모니터링 앱</text>
+</svg>

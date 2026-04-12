@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#eef2ff"/>
+  <rect x="0" y="0" width="800" height="4" fill="#818cf8"/>
+  <text x="400" y="200" font-family="monospace" font-size="14" fill="#6366f1" text-anchor="middle" dominant-baseline="middle">GB New Demo</text>
+  <text x="400" y="225" font-family="monospace" font-size="11" fill="#a5b4fc" text-anchor="middle" dominant-baseline="middle">Kotlin · Swift · SwiftUI</text>
+  <rect x="340" y="245" width="120" height="1" fill="#c7d2fe"/>
+  <text x="400" y="265" font-family="monospace" font-size="10" fill="#c7d2fe" text-anchor="middle" dominant-baseline="middle">카메라 기반 생체신호 측정</text>
+</svg>

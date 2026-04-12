@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#fff1f2"/>
+  <rect x="0" y="0" width="800" height="4" fill="#f87171"/>
+  <text x="400" y="200" font-family="monospace" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">VitalLink (의료기기 인허가)</text>
+  <text x="400" y="225" font-family="monospace" font-size="11" fill="#fca5a5" text-anchor="middle" dominant-baseline="middle">Kotlin · Camera2 API</text>
+  <rect x="340" y="245" width="120" height="1" fill="#fecaca"/>
+  <text x="400" y="265" font-family="monospace" font-size="10" fill="#fecaca" text-anchor="middle" dominant-baseline="middle">의료기기 인허가 대응 앱</text>
+</svg>
