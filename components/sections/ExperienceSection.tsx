@@ -8,7 +8,7 @@ interface ExperienceSectionProps {
 
 export function ExperienceSection({ experience }: ExperienceSectionProps) {
   return (
-    <SectionContainer id="experience" alt>
+    <SectionContainer id="experience">
       <SectionTitle label="경력 사항" sub="Experience" />
       <div className="space-y-5">
         {experience.map((exp, i) => (

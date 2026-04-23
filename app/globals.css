@@ -32,3 +32,72 @@ html {
     @apply inline-flex items-center font-mono text-sm px-3 py-1 rounded-full border;
   }
 }
+
+@media print {
+  @page {
+    margin: 0;
+    size: A4;
+  }
+
+  /* 불필요한 UI 숨기기 */
+  header,
+  [aria-label="맨 위로"],
+  .animate-bounce,
+  footer {
+    display: none !important;
+  }
+
+  /* 배경색 정확하게 출력 */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    color: #111 !important;
+    font-size: 13px;
+  }
+
+  /* 히어로: 첫 페이지 */
+  #hero {
+    min-height: 0 !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  /* 각 섹션 새 페이지에서 시작 (education은 experience와 같은 페이지) */
+  section:not(#hero):not(#education) {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* 학력/활동은 경력 사항에 이어서 출력 */
+  #education {
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* 섹션 타이틀 다음에 페이지 나뉘지 않게 (타이틀과 첫 카드가 함께) */
+  .print-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* 카드 내부에서 페이지 나뉘지 않게 */
+  article,
+  .rounded-2xl {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 그림자 제거 */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+}

@@ -5,7 +5,7 @@ interface SectionTitleProps {
 
 export function SectionTitle({ label, sub }: SectionTitleProps) {
   return (
-    <div className="mb-12">
+    <div className="mb-12 print-title">
       {sub && (
         <p className="text-sm font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">
           {sub}

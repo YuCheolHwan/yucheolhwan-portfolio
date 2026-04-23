@@ -5,7 +5,7 @@ export const portfolioData: PortfolioData = {
     name: "유철환",
     role: "Mobile Application Developer",
     intro: [
-      "Android(Kotlin) 기반으로 iOS(Swift)까지 개발하는 모바일 애플리케이션 개발자",
+      "Android(Kotlin) 기반으로 iOS(Swift)까지 개발하는 모바일 애플리케이션 개발자 (키오스크 포함)",
       "카메라 기반 생체신호 처리 및 실시간 측정 플로우 구현 경험",
       "멀티 모듈 · 멀티 클라이언트 구조 설계 및 운영 경험",
       "보안(루팅·Frida·무결성 검증)과 운영 환경을 고려한 구조 개선 수행",
@@ -34,7 +34,7 @@ export const portfolioData: PortfolioData = {
     tools: ["Android Studio", "Xcode", "Git", "Gradle", "Fastlane"],
     database: ["Room (SQLite)", "DataStore"],
     security: ["Root Detection", "Frida Detection", "App Integrity Check"],
-    etc: ["실시간 이미지 처리", "카메라 기반 측정 로직"],
+    etc: ["실시간 이미지 처리", "카메라 기반 측정 로직", "Kiosk Mode (Lock Task API)", "전용 단말 환경 구성"],
   },
 
   coreCompetencies: [
@@ -42,6 +42,7 @@ export const portfolioData: PortfolioData = {
     "SDK 버전 분기 및 확장 가능한 구조 설계",
     "멀티 모듈 기반 프로젝트 구조 개선",
     "보안 탐지 및 무결성 검증 로직 구현",
+    "키오스크 전용 앱 구조 설계 및 운영 환경 대응",
   ],
 
   experience: [
@@ -103,17 +104,18 @@ export const portfolioData: PortfolioData = {
       name: "VitalLink (의료기기 인허가)",
       period: "2025.04 ~ 2025.05",
       team: "FE 3명 (기여도 30%)",
-      techStack: ["Kotlin", "Camera2 API"],
-      description: "의료기기 인허가 대응 앱",
+      techStack: ["Kotlin", "Swift", "Camera2 API"],
+      description: "의료기기 인허가 대응 Android · iOS 앱",
       contributions: [
-        "Camera2 기반 측정 앱 개발",
+        "Android · iOS 동시 개발 참여",
+        "Camera2 기반 Android 측정 앱 개발",
         "SDK 연동 측정 기능 구현",
         "이미지 저장 및 서버 전송",
-        "Regression Test 코드 작성",
+        "Android · iOS Regression Test 코드 작성",
       ],
       achievements: [
         "의료기기 인허가 대응 완료",
-        "측정 기능 안정성 개선",
+        "Android · iOS 플랫폼 측정 기능 안정성 확보",
         "데이터 수집 기능 구축",
       ],
       images: ["/images/mock-project-3.svg"],
@@ -141,19 +143,24 @@ export const portfolioData: PortfolioData = {
     },
 
     {
-      name: "지비온 고도화",
+      name: "지비온 고도화 (키오스크)",
       period: "2025.03 ~ 2025.04",
       team: "FE 4명 (기여도 30%)",
-      techStack: ["Kotlin", "REST API"],
-      description: "기존 서비스 고도화",
+      techStack: ["Kotlin", "REST API", "Kiosk Mode", "Multi-Module"],
+      description: "고객사별로 분산 배포되던 키오스크 앱을 멀티 모듈 구조로 통합하여 유지보수성과 생산성을 개선한 고도화 프로젝트",
       contributions: [
-        "UI 개발 및 기능 구현",
+        "고객사별 개별 프로젝트를 멀티 모듈 구조로 통합",
+        "공통 모듈 분리로 중복 코드 제거 및 재사용성 확보",
+        "키오스크 전용 UI 개발 및 기능 구현",
+        "Lock Task API 기반 키오스크 모드 적용",
         "데이터 동기화 로직 구현",
         "에러 핸들링 구조 개선",
-        "레거시 코드 리팩토링",
-        "공통 컴포넌트 분리",
       ],
-      achievements: ["유지보수성 향상", "앱 안정성 개선", "플랫폼화 기반 마련"],
+      achievements: [
+        "고객사별 개별 배포 구조 → 단일 멀티 모듈 구조로 통합",
+        "신규 고객사 추가 시 모듈 조합만으로 대응 가능한 구조 확립",
+        "유지보수 공수 절감 및 배포 생산성 향상",
+      ],
       images: ["/images/mock-project-5.svg"],
     },
   ],

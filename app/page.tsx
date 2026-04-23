@@ -20,8 +20,8 @@ export default function Home() {
       <CoreCompetenciesSection competencies={coreCompetencies} />
       <SkillsSection skills={skills} />
       <ExperienceSection experience={experience} />
-      <ProjectsSection projects={projects} />
       <EducationSection education={education} activities={activities} />
+      <ProjectsSection projects={projects} />
 
       <footer className="bg-gray-900 dark:bg-black py-10 text-center border-t border-gray-800">
         <p className="text-gray-400 text-base">
